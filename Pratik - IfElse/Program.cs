@@ -18,11 +18,16 @@ else
 
 // Girilen sayının çift veya tek olduğunu kontrol eden kontrol yapısı
 
-if(sayi % 2 == 0)
+if (sayi > 0)
 {
-    Console.WriteLine("Girilen sayı çifttir.");
+    if (sayi % 2 == 0)
+    {
+        Console.WriteLine("Girilen sayı çifttir.");
+    }
+    else
+    {
+        Console.WriteLine("Girilen sayı tektir.");
+    }
 }
 else
-{
-    Console.WriteLine("Girilen sayı tektir.");
-}
+    Console.WriteLine("Girilen sayı negatiftir veya 0'dır.");
